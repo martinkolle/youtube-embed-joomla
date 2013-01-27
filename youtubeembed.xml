@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="content">
+	<name>PLG_CONTENT_YOUTUBEEMBED</name>
+	<author>Martin Kollerup</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright (C) 2013 www.kmweb.dk. All rights reserved.</copyright>
+	<license>http://www.gnu.org, see LICENSE.php</license>
+	<authorEmail>martin.kollerup@gmail.com</authorEmail>
+	<authorUrl>www.kmweb.dk</authorUrl>
+	<version>1.0</version>
+	<description>PLG_CONTENT_YOUTUBEEMBED_DESCRIPTION</description>
+	<files>
+		<filename plugin="youtubeembed">youtubeembed.php</filename>
+        <filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_youtubeembed.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_youtubeembed.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+	     	<fieldset name="general" label="General">
+
+				<field name="type" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_PLAYER" description="PLG_CONTENT_YOUTUBEEMBED_PLAYER_DESC">
+					<option value="0">PLG_CONTENT_YOUTUBEEMBED_AS3</option>
+					<option value="1">PLG_CONTENT_YOUTUBEEMBED_HTML5</option>
+				</field>
+				<field name="responsive" type="list" default="1" label="PLG_CONTENT_YOUTUBEEMBED_RESPONSIVE" description="PLG_CONTENT_YOUTUBEEMBED_RESPONSIVE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ratio" type="text" default="1.6" label="PLG_CONTENT_YOUTUBEEMBED_RATIO" description="PLG_CONTENT_YOUTUBEEMBED_RATIO_DESC" />
+		        <field name="width" type="text" default="425" label="PLG_CONTENT_YOUTUBEEMBED_WIDTH" description="PLG_CONTENT_YOUTUBEEMBED_WIDTH_DESC" />
+				<field name="height" type="text" default="344" label="PLG_CONTENT_YOUTUBEEMBED_HEIGHT" description="PLG_CONTENT_YOUTUBEEMBED_HEIGHT_DESC" />
+				<field name="autohide" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_AUTOHIDE" description="PLG_CONTENT_YOUTUBEEMBED_AUTOHIDE_DESC">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">3</option>
+				</field>
+				<field name="autoplay" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_AUTOPLAY" description="PLG_CONTENT_YOUTUBEEMBED_AUTOPLAY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="fs" type="list" default="1" label="PLG_CONTENT_YOUTUBEEMBED_FULLSCREEN" description="PLG_CONTENT_YOUTUBEEMBED_FULLSCREEN_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="color" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_COLOR" description="PLG_CONTENT_YOUTUBEEMBED_COLOR_DESC">
+					<option value="0">PLG_CONTENT_YOUTUBEEMBED_COLOR_RED</option>
+					<option value="1">PLG_CONTENT_YOUTUBEEMBED_COLOR_WHITE</option>
+				</field>
+				<field name="loop" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_LOOP" description="PLG_CONTENT_YOUTUBEEMBED_LOOP_DESC">
+					<option value="0">JYES</option>
+					<option value="1">JNO</option>
+				</field>
+				<field name="rel" type="list" default="1" label="PLG_CONTENT_YOUTUBEEMBED_REL" description="PLG_CONTENT_YOUTUBEEMBED_REL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="showinfo" type="list" default="1" label="PLG_CONTENT_YOUTUBEEMBED_SHOW_INFO" description="PLG_CONTENT_YOUTUBEEMBED_SHOW_INFO_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="theme" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_THEME" description="PLG_CONTENT_YOUTUBEEMBED_THEME_DESC">
+					<option value="1">PLG_CONTENT_YOUTUBEEMBED_DARK</option>
+					<option value="0">PLG_CONTENT_YOUTUBEEMBED_LIGHT</option>
+				</field>
+	    	</fieldset>
+	    	<fieldset name="advanced">
+	    		<field name="cc_load_policy" type="list" default="2" label="PLG_CONTENT_YOUTUBEEMBED_CC_LOAD_POLICY" description="PLG_CONTENT_YOUTUBEEMBED_CC_LOAD_POLICY_DESC">
+					<option value="0">PLG_CONTENT_YOUTUBEEMBED_IV_LOAD_POLICY_0</option>
+					<option value="1">PLG_CONTENT_YOUTUBEEMBED_IV_LOAD_POLICY_1</option>
+					<option value="2">PLG_CONTENT_YOUTUBEEMBED_IV_LOAD_POLICY_2</option>
+				</field>
+	    		<field name="iv_load_policy" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_IV_LOAD_POLICY" description="PLG_CONTENT_YOUTUBEEMBED_IV_LOAD_POLICY_DESC">
+					<option value="1">JYES</option>
+					<option value="3">JNO</option>
+				</field>
+				<field name="modestbranding" type="list" default="0" label="PLG_CONTENT_YOUTUBEEMBED_MODESTBRANDING" description="PLG_CONTENT_YOUTUBEEMBED_MODESTBRANDING_DESC">
+					<option value="0">JNO	</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="custom" type="textarea" default="" label="PLG_CONTENT_YOUTUBEEMBED_CUSTOM" description="PLG_CONTENT_YOUTUBEEMBED_CUSTOM_DESC" />
+ 			</fieldset>
+	    </fields>
+	</config>
+</extension>
