@@ -1,62 +1,91 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Youtube-embed-joomla : Embed youtube videos in joomla 2.5+ by pasting the youtube url in articles. " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Youtube-embed-joomla</title>
+    <meta charset="utf-8">
+    <title>Youtube embed for Joomla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Embed youtube videos in joomla 2.5+ by pasting the youtube url in articles.">
+    <meta name="author" content="kmweb.dk">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/martinkolle/youtube-embed-joomla">View on GitHub</a>
-
-          <h1 id="project_title">Youtube-embed-joomla</h1>
-          <h2 id="project_tagline">Embed youtube videos in joomla 2.5+ by pasting the youtube url in articles. </h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/martinkolle/youtube-embed-joomla/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/martinkolle/youtube-embed-joomla/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Youtube Embed for Joomla</h3>
-
-<p>Youtube Embed is a plugin for Joomla 2.5 and 3.0. This is a easy way to create embedded videos fro youtube. Simply paste the url, and we will embed it for you! </p>
-
-<h3>How to install?</h3>
-
-<ol>
-<li>Download the plugin (left)</li>
-<li>Install the plugin in Joomal 2.5 or higher</li>
-<li>Go to "Extensions -&gt; Plugin manager -&gt; Content - Youtube Embed" and enable it. </li>
-<li>We hav ealso created some settings for you</li>
-</ol><h3>Have fun</h3>
-
-<p>If you need any help to get fun, please create a ticket under "Issues" here at the github repo! :) </p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Youtube-embed-joomla maintained by <a href="https://github.com/martinkolle">martinkolle</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="old-versions.html">Old versions</a></li>
+        </ul>
+        <h3 class="muted">Facebook Like button for Joomla</h3>
+      </div>
+      <hr>
+      <div class="jumbotron">
+        <h1>Like button made simple</h1>
+        <p class="lead">Why should it be difficult to add a Youtube video in Joomla? I have changed it for you. Simply install and you are ready to embed Youtube videos!</p>
+        <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+          <a class="btn btn-success btn-large btn-block" href="http://update.kmweb.dk/youtube-embed/joomla-25/mod_facebooklike_1.4.8_J25.zip"><i class="icon-download-alt"></i> Joomla 2.5</a>
+          <a class="btn btn-warning btn-large btn-block" href="http://update.kmweb.dk/youtube-embed/joomla-30/mod_facebooklike_1.4.8_J30.zip"><i class="icon-download-alt"></i> Joomla 3.0</a>
+          <a class="btn btn-large btn-info btn-block" href="old-versions.html"><i class="icon-fast-backward"></i> Old versions</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row-fluid marketing">
+        <div class="span6"> 
+          <div class="list-widget">
+          <h4>How to install</h4>
+          <p>
+            <ol style="padding-left:10px">
+            <li>Download the plugin.</li>
+            <li>Install the plugin in backend</li>
+            <li>Go to "Extensions" -> "Plugin" -> "Content - Youtube Embed" and enable it.</li>
+            <li>You can edit the avalible settings here, too</li>
+            <li>Enjoy a module without credits back to the developer</li>
+          </p>
+          </div>
+        </div>
+        <div class="span6">
+          <div class="list-widget">
+            <h4>Know problems</h4>
+            <ol></ol>
+            <b>Nothing reported</b>
+            <!--<div class="accordion" id="accordion">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Hidden comment box
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse in">
+                  <div class="accordion-inner">
+                    <p><b>Solution</b></p>
+                    <p>Enable "Z-index" in the module settings or find a new template. (or find a developer to help you)</p>
+                  </div>
+                </div>
+              </div>
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer">
+        <p>&copy; kmweb.dk and martinkolle 2012</p>
+      </div>
+    </div> <!-- /container -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
   </body>
 </html>
